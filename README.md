@@ -2,7 +2,7 @@
 
 ## 1. Run the image
 '''
-sudo docker run --detach --publish 33712:8080 --volume jenkins_home:/var/jenkins_home --name jenkins jenkins/jenkins:lts 
+sudo docker-compose --project-name jenkins --project-directory $(pwd) up -d
 '''
 
 ## 2. Retrieve the admin password
